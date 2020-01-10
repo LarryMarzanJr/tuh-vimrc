@@ -73,3 +73,8 @@ call pathogen#infect()
 " ============================================================================
 " Python IDE Setup
 " ============================================================================
+
+" Settings for vim-powerline
+" cd ~/.vim/bundle
+" git clone git://github.com/Lokaltog/vim-powerline.git
+"" set laststatus=2
