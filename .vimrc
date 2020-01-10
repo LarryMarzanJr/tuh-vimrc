@@ -43,3 +43,5 @@ noremap <C-Z> :update<CR>
 vnoremap <C-Z> <C-C>:update<CR>
 inoremap <C-Z> <C-O>:update<CR>
 
+" Bind <Leader> key from backslash to comma key
+let mapleader = ","
