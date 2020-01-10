@@ -49,3 +49,7 @@ let mapleader = ","
 " Quick Close current window or all windows using <Leader>w or <Leader>W
 noremap <Leader>w :quit<CR>  " Quit current window
 noremap <Leader>W :qa!<CR>   " Quit all windows
+
+" Moving between tabs, <Leader>n to go left, <leader>m to go right
+map <Leader>n <esc>:tabprevious<CR>
+map <Leader>m <esc>:tabnext<CR>
