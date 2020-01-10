@@ -16,3 +16,6 @@ set number
 
 " Enable syntax highlighting
 syntax enable
+
+" Display status bar
+set laststatus=2
