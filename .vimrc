@@ -34,3 +34,6 @@ set title
 
 " Allow backspace over indentation, line breaks & insert between lines
 set backspace=indent,eol,start
+
+" Increase undo limit to 700
+set history=700
