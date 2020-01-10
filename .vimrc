@@ -26,3 +26,6 @@ set cursorline
 " Disable beep on errors & flash the screen instead of beeping on errors
 set noerrorbells
 set visualbell
+
+" Enable mouse for scrolling and resizing
+set mouse=a
