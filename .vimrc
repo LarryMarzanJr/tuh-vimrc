@@ -22,3 +22,7 @@ set laststatus=2
 
 " Add line to current cursor
 set cursorline
+
+" Disable beep on errors & flash the screen instead of beeping on errors
+set noerrorbells
+set visualbell
