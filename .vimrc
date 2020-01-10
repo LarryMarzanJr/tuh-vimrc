@@ -13,3 +13,6 @@ set term=ansi
 
 " Enable line number
 set number
+
+" Enable syntax highlighting
+syntax enable
