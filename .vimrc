@@ -1,5 +1,4 @@
 " Joenmarz custom .vimrc by Larry Benedicto Marzan Jr.
-
    
 " ===================================================
 " For private use only
@@ -32,3 +31,6 @@ set mouse=a
 
 " Display file name that is currently being edited on Windows title
 set title
+
+" Allow backspace over indentation, line breaks & insert between lines
+set backspace=indent,eol,start
