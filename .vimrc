@@ -29,3 +29,6 @@ set visualbell
 
 " Enable mouse for scrolling and resizing
 set mouse=a
+
+" Display file name that is currently being edited on Windows title
+set title
