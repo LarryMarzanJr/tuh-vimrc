@@ -86,3 +86,11 @@ call pathogen#infect()
 "" set wildignore+=*.pyc
 "" set wildignore+=*_build/*
 "" set wildignore+=*/coverage/*
+
+" Settings for jedi-vim (python auto-completion)
+" cd ~/.vim/bundle
+" git clone git://github.com/davidhalter/jedi-vim.git
+"" let g:jedi#usages_command = "<leader>z"
+"" let g:jedi#popup_on_dot = 0
+"" let g:jedi#popup_select_first = 0
+"" map <Leader>b Oimport ipdb; ipdb.set_trace() # BREAKPOINT<C-c>
