@@ -19,3 +19,6 @@ syntax enable
 
 " Display status bar
 set laststatus=2
+
+" Add line to current cursor
+set cursorline
