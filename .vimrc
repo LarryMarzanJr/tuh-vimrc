@@ -45,3 +45,7 @@ inoremap <C-Z> <C-O>:update<CR>
 
 " Bind <Leader> key from backslash to comma key
 let mapleader = ","
+
+" Quick Close current window or all windows using <Leader>w or <Leader>W
+noremap <Leader>w :quit<CR>  " Quit current window
+noremap <Leader>W :qa!<CR>   " Quit all windows
