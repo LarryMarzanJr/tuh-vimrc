@@ -13,6 +13,13 @@ set term=ansi
 " Enable line number
 set number
 
+" Set max length of code to 80
+set tw=79   " width of document (used by gd)
+set nowrap  " don't automatically wrap on load
+set fo-=t   " don't automatically wrap text when typing
+set colorcolumn=80
+highlight ColorColumn ctermbg=233
+
 " Enable syntax highlighting
 syntax enable
 
