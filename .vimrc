@@ -60,3 +60,10 @@ noremap <Leader>W :qa!<CR>   " Quit all windows
 " Moving between tabs, <Leader>n to go left, <leader>m to go right
 map <Leader>n <esc>:tabprevious<CR>
 map <Leader>m <esc>:tabnext<CR>
+
+
+
+
+" ============================================================================
+" Python IDE Setup
+" ============================================================================
