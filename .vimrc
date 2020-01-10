@@ -37,3 +37,9 @@ set backspace=indent,eol,start
 
 " Increase undo limit to 700
 set history=700
+
+" Quicksave command
+noremap <C-Z> :update<CR>
+vnoremap <C-Z> <C-C>:update<CR>
+inoremap <C-Z> <C-O>:update<CR>
+
