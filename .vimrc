@@ -1,7 +1,13 @@
 " Joenmarz custom .vimrc by Larry Benedicto Marzan Jr.
    
 " ===================================================
-" For private use only
+" HOW TO INSTALL
+" 
+" clone this git repo from home directory:
+" git clone https://github.com/joenmarz/vimrc.git
+"
+" to auto load, add this path to your ~/.bashrc file:
+" /home/$USER/vimrc/.vimrc
 " ===================================================
 
 " Automatic reloading of .vimrc
