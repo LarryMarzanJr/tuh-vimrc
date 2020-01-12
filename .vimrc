@@ -20,6 +20,7 @@ set term=ansi
 set number
 
 " Set max length of code to 80
+set wrap " enable wrap on load
 set tw=79   " width of document (used by gd)
 "set nowrap  " don't automatically wrap on load
 set fo-=t   " don't automatically wrap text when typing
