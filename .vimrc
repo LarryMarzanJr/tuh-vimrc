@@ -6,8 +6,8 @@
 " clone this git repo from home directory:
 " git clone https://github.com/joenmarz/vimrc.git
 "
-" to auto load, add this path to your ~/.bashrc file:
-" /home/$USER/vimrc/.vimrc
+" copy this .vimrc file to your home directory:
+" cp /home/$USER/vimrc/.vimrc ~
 " ===================================================
 
 " Automatic reloading of .vimrc
