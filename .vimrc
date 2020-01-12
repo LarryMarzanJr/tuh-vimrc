@@ -81,6 +81,11 @@ set nobackup
 set nowritebackup
 set noswapfile
 
+" Use 'Ctrl-a' shortcut to select all text
+" https://forums.fedoraforum.org/showthread.php?217724-Selecting-all-in-vi-editor
+" Press gg to go to the first line, then v for visual selection, and then shift+g to go to the end of file.
+map <C-A> ggv<S-G>
+
 " Manage Vim plugins
 " mkdir -p ~/.vim/autoload ~/.vim/bundle
 " curl -so ~/.vim/autoload/pathogen.vim https://raw.githubusercontent.com/tpope/vim-pathogen/master/autoload/pathogen.vim
