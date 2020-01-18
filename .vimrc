@@ -37,10 +37,7 @@ syntax on
 set t_Co=256
 " Color Themes
 " wget -O /home/$USER/.vim/colors/wombat256mod.vim http://www.vim.org/scripts/download_script.php?src_id=13400
-"color wombat256mod
-
-" wget -O /home/$USER/.vim/colors/molokai.vim https://github.com/tomasr/molokai/blob/master/colors/molokai.vim
-"color molokai
+color wombat256mod
 
 
 " Display status bar
