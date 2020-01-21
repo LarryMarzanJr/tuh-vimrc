@@ -178,8 +178,16 @@ call pathogen#infect()
 " Plug('GitUser/Repository')
 call plug#begin('~/.vim/plugged')
 
-    " Autocompletion for python
-    Plug('Valloric/YouCompleteMe')
+    " YouCompleteMe - Autocompletion plugin for python
+    Plug('ycm-core/YouCompleteMe')
+    " install cmake:
+    " sudo apt install cmake
+    " activate your virtual environment mode
+    " cd inside the YouCompleteMe directory, type:
+    " ./install.py --clang-completer
+    let g:ycm_python_binary_path = 'python3'
+    let g:ycm_autoclose_preview_window_after_completion = 1
+    let g:ycm_min_num_of_chars_for_completion = 1
 
 call plug#end()
 
