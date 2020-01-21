@@ -50,14 +50,15 @@ set t_Co=256
 "color angr
 "color apprentice
 "color archery
-"color atom
+color atom
 "color ayu
 "color carbonized-dark
 "color carbonized-light
 "color challenger_deep
 "color deep-space
-"color deus
-color dracula
+"color deus 
+"set background=light
+"color dracula
 "color flattened_dark
 "color flattened_light
 "color focuspoint
@@ -161,12 +162,26 @@ set noswapfile
 map <C-A> ggv<S-G>
 
 " Manage Vim plugins
+" USING PATHOGEN#INFECT:
 " mkdir -p ~/.vim/autoload ~/.vim/bundle
 " curl -so ~/.vim/autoload/pathogen.vim https://raw.githubusercontent.com/tpope/vim-pathogen/master/autoload/pathogen.vim
 " Now you can install any plugin into a .vim/bundle/plugin-name/ folder
 call pathogen#infect()
 
+" or alternatively,
+" USING VIM PLUG:
+" curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+"     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+" Specify a directory for plugins,
+" add your plugin after plug#begin('~/.vim/plugged') and before plug#end()
+" by adding for example:
+" Plug('GitUser/Repository')
+call plug#begin('~/.vim/plugged')
 
+    " Autocompletion for python
+    Plug('Valloric/YouCompleteMe')
+
+call plug#end()
 
 " ============================================================================
 " Python IDE Setup
@@ -179,7 +194,7 @@ set ai
 set ts=4
 " Soft Tab Stop 4
 set sts=4
-" Expand Tab
+" eXPAND tab
 set et
 " Shift Width 4
 set sw=4
