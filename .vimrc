@@ -172,6 +172,18 @@ call pathogen#infect()
 " Python IDE Setup
 " ============================================================================
 
+" Vim Modeline
+" Auto Indentation for Python
+set ai
+" Tab Stop 4
+set ts=4
+" Soft Tab Stop 4
+set sts=4
+" Expand Tab
+set et
+" Shift Width 4
+set sw=4
+
 " Settings for vim-powerline
 " cd ~/.vim/bundle
 " git clone git://github.com/Lokaltog/vim-powerline.git
