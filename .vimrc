@@ -35,10 +35,81 @@ syntax on
 " Color scheme
 " mkdir -p ~/.vim/colors && cd ~/.vim/colors
 set t_Co=256
-" Color Themes
-" wget -O /home/$USER/.vim/colors/wombat256mod.vim http://www.vim.org/scripts/download_script.php?src_id=13400
-color wombat256mod
-
+" Color Themes Collection
+" git clone https://github.com/joenmarz/awesome-vim-colorschemes.git
+" cp ~/awesome-vim-colorschemes/colors/* ~/.vim/colors/
+" choose theme colors. Uncomment one of the following:
+"color 256_noir
+"color OceanicNext
+"color OceanicNextLight
+"color PaperColor
+"color abstract
+"color afterglow
+"color alduin
+"color anderson
+"color angr
+"color apprentice
+"color archery
+"color atom
+"color ayu
+"color carbonized-dark
+"color carbonized-light
+"color challenger_deep
+"color deep-space
+"color deus
+color dracula
+"color flattened_dark
+"color flattened_light
+"color focuspoint
+"color github
+"color gotham
+"color gotham256
+"color gruvbox
+"color happy_hacking
+"color hybrid
+"color hybrid_material
+"color hybrid_reverse
+"color iceberg
+"color jellybeans
+"color lightning
+"color lucid
+"color lucius
+"color materialbox
+"color meta5
+"color minimalist
+"color molokai
+"color molokayo
+"color nord
+"color one-dark
+"color one
+"color onedark
+"color orange-moon
+"color orbital
+"color paramount
+"color parsec
+"color pink-moon
+"color purify
+"color pyte
+"color rakr
+"color rdark-terminal2
+"color scheakur
+"color seoul256-light
+"color seoul256
+"color sierra
+"color snow
+"color solarized
+"color solarized8
+"color solarized8_flat
+"color solarized8_high
+"color solarized8_low
+"color space-vim-dark
+"color stellarized
+"color tender
+"color termschool
+"color twilight256
+"color two-firewatch
+"color wombat256mod
+"color yellow-moon
 
 " Display status bar
 set laststatus=2
