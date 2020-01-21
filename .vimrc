@@ -188,6 +188,9 @@ call plug#begin('~/.vim/plugged')
     let g:ycm_python_binary_path = 'python3'
     let g:ycm_autoclose_preview_window_after_completion = 1
     let g:ycm_min_num_of_chars_for_completion = 1
+    " still in virtual environment mode, install package called request
+    " by typing:
+    " pip3 install requests
 
 call plug#end()
 
