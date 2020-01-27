@@ -25,7 +25,7 @@ set tw=79   " width of document (used by gd)
 "set nowrap  " don't automatically wrap on load
 set fo-=t   " don't automatically wrap text when typing
 set colorcolumn=80
-highlight ColorColumn ctermbg=233
+highlight ColorColumn ctermbg=14
 
 " Enable syntax highlighting
 syntax enable
@@ -50,14 +50,14 @@ set t_Co=256
 "color angr
 "color apprentice
 "color archery
-color atom
+"color atom
 "color ayu
 "color carbonized-dark
 "color carbonized-light
 "color challenger_deep
 "color deep-space
 "color deus 
-"set background=light
+"set background=dark
 "color dracula
 "color flattened_dark
 "color flattened_light
@@ -88,7 +88,7 @@ color atom
 "color orbital
 "color paramount
 "color parsec
-"color pink-moon
+"wcolor pink-moon
 "color purify
 "color pyte
 "color rakr
@@ -109,7 +109,7 @@ color atom
 "color termschool
 "color twilight256
 "color two-firewatch
-"color wombat256mod
+color wombat256mod
 "color yellow-moon
 
 " Display status bar
@@ -195,6 +195,16 @@ call plug#begin('~/.vim/plugged')
 call plug#end()
 
 " ============================================================================
+" HTML Snippets
+" ============================================================================
+"HTML autocompletion:
+autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
+
+" Autocomplete HTML Template
+" Create file ~/.vim/templates/html.skel
+autocmd BufNewFile *.html 0r ~/.vim/templates/html.skel
+
+" ============================================================================
 " Python IDE Setup
 " ============================================================================
 
@@ -230,3 +240,12 @@ let g:jedi#usages_command = "<leader>z"
 let g:jedi#popup_on_dot = 0
 let g:jedi#popup_select_first = 0
 map <Leader>b Oimport ipdb; ipdb.set_trace() # BREAKPOINT<C-c>
+
+
+" Setup autocompletion:
+filetype plugin on
+au FileType php setl ofu=phpcomplete#CompletePHP
+au FileType ruby,eruby setl ofu=rubycomplete#Complete
+au FileType html,xhtml setl ofu=htmlcomplete#CompleteTags
+au FileType c setl ofu=ccomplete#CompleteCpp
+au FileType css setl ofu=csscomplete#CompleteCSS
