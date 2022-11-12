@@ -13,7 +13,6 @@
 
 " Automatic reloading of .vimrc
 autocmd! bufwritepost .vimrc source %
-
 " Enable cursor movement
 set term=ansi
 
@@ -22,10 +21,10 @@ set number
 
 " Set max length of code to 80
 set wrap " enable wrap on load
-set tw=80   " width of document (used by gd)
+set tw=92   " width of document (used by gd)
 "set nowrap  " don't automatically wrap on load
 set fo-=t   " don't automatically wrap text when typing
-"set colorcolumn=80
+set colorcolumn=92
 highlight ColorColumn ctermbg=14
 
 " Enable syntax highlighting
@@ -39,7 +38,7 @@ set t_Co=256
 "color OceanicNext
 "color OceanicNextLight
 "color PaperColor
-"color abstract
+color abstract
 "color afterglow
 "color alduin
 "color anderson
@@ -84,7 +83,7 @@ set t_Co=256
 "color orbital
 "color paramount
 "color parsec
-"wcolor pink-moon
+"color pink-moon
 "color purify
 "color pyte
 "color rakr
@@ -99,7 +98,7 @@ set t_Co=256
 "color solarized8_flat
 "color solarized8_high
 "color solarized8_low
-color space-vim-dark
+"color space-vim-dark
 "color stellarized
 "color tender
 "color termschool
@@ -119,7 +118,7 @@ set noerrorbells
 set visualbell
 
 " Enable mouse for scrolling and resizing
-set mouse=a
+"set mouse=a
 
 " Display file name that is currently being edited on Windows title
 set title
@@ -131,20 +130,20 @@ set backspace=indent,eol,start
 set history=700
 
 " Quicksave command
-noremap <C-Z> :update<CR>
-vnoremap <C-Z> <C-C>:update<CR>
-inoremap <C-Z> <C-O>:update<CR>
+"noremap <C-Z> :update<CR>
+"vnoremap <C-Z> <C-C>:update<CR>
+"inoremap <C-Z> <C-O>:update<CR>
 
 " Bind <Leader> key from backslash to comma key
-let mapleader = ","
+"let mapleader = ","
 
 " Quick Close current window or all windows using <Leader>w or <Leader>W
-noremap <Leader>w :quit<CR>  " Quit current window
-noremap <Leader>W :qa!<CR>   " Quit all windows
+"noremap <Leader>w :quit<CR>  " Quit current window
+"noremap <Leader>W :qa!<CR>   " Quit all windows
 
 " Moving between tabs, <Leader>n to go left, <leader>m to go right
-map <Leader>n <esc>:tabprevious<CR>
-map <Leader>m <esc>:tabnext<CR>
+"map <Leader>n <esc>:tabprevious<CR>
+"map <Leader>m <esc>:tabnext<CR>
 
 " Disable stupid backup and swap files - they trigger too many events
 " for file system watchers
@@ -155,7 +154,7 @@ set noswapfile
 " Use 'Ctrl-a' shortcut to select all text
 " https://forums.fedoraforum.org/showthread.php?217724-Selecting-all-in-vi-editor
 " Press gg to go to the first line, then v for visual selection, and then shift+g to go to the end of file.
-map <C-A> ggv<S-G>
+"map <C-A> ggv<S-G>
 
 " Manage Vim plugins
 " USING PATHOGEN#INFECT:
