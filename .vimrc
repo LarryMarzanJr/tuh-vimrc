@@ -24,7 +24,7 @@ set wrap " enable wrap on load
 set tw=79   " width of document (used by gd)
 "set nowrap  " don't automatically wrap on load
 set fo-=t   " don't automatically wrap text when typing
-set colorcolumn=80
+"set colorcolumn=80
 highlight ColorColumn ctermbg=14
 
 " Enable syntax highlighting
@@ -103,13 +103,13 @@ set t_Co=256
 "color solarized8_flat
 "color solarized8_high
 "color solarized8_low
-"color space-vim-dark
+color space-vim-dark
 "color stellarized
 "color tender
 "color termschool
 "color twilight256
 "color two-firewatch
-color wombat256mod
+"color wombat256mod
 "color yellow-moon
 
 " Display status bar
