@@ -1,13 +1,14 @@
-" Joenmarz custom .vimrc by Larry Benedicto Marzan Jr.
+" Custom .vimrc by Larry Benedicto Marzan Jr.
    
 " ===================================================
 " HOW TO INSTALL
 " 
 " clone this git repo from home directory:
-" git clone https://github.com/joenmarz/vimrc.git
+" git clone https://github.com/LarryMarzanJr/vimrc.git
 "
-" copy this .vimrc file to your home directory:
-" cp /home/$USER/vimrc/.vimrc ~
+" create symlink (shortcut) to your .vimrc file and .vim folder 
+" ln -s ~/vimrc/.vimrc ~/.vimrc
+" ln -s ~/vimrc/.vim ~/.vim
 " ===================================================
 
 " Automatic reloading of .vimrc
@@ -21,7 +22,7 @@ set number
 
 " Set max length of code to 80
 set wrap " enable wrap on load
-set tw=79   " width of document (used by gd)
+set tw=80   " width of document (used by gd)
 "set nowrap  " don't automatically wrap on load
 set fo-=t   " don't automatically wrap text when typing
 "set colorcolumn=80
@@ -31,14 +32,9 @@ highlight ColorColumn ctermbg=14
 syntax enable
 syntax on
 
-
-" Color scheme
-" mkdir -p ~/.vim/colors && cd ~/.vim/colors
+" Color scheme located inside the .vim/colors/ folder
 set t_Co=256
-" Color Themes Collection
-" git clone https://github.com/joenmarz/awesome-vim-colorschemes.git
-" cp ~/awesome-vim-colorschemes/colors/* ~/.vim/colors/
-" choose theme colors. Uncomment one of the following:
+" Color Themes Collection. To choose theme colors, uncomment one of the following:
 "color 256_noir
 "color OceanicNext
 "color OceanicNextLight
@@ -165,7 +161,9 @@ map <C-A> ggv<S-G>
 " USING PATHOGEN#INFECT:
 " mkdir -p ~/.vim/autoload ~/.vim/bundle
 " curl -so ~/.vim/autoload/pathogen.vim https://raw.githubusercontent.com/tpope/vim-pathogen/master/autoload/pathogen.vim
-" Now you can install any plugin into a .vim/bundle/plugin-name/ folder
+" or
+" now the folder .vim/autoload and .vim/bundle already in this repository so
+" you can install install any plugin into the .vim/bundle/plugin-name/ folder
 call pathogen#infect()
 
 " or alternatively,
