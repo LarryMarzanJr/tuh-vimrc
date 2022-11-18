@@ -194,6 +194,10 @@ call plug#begin('~/.vim/plugged')
     " for user manual open https://github.com/tpope/vim-fugitive#readme
     Plug 'tpope/vim-fugitive'
 
+    " NERDTree - integrated file manager
+    " for user manual open https://github.com/preservim/nerdtree#the-nerdtree-
+    Plug 'preservim/nerdtree'
+
 
 call plug#end()
 
