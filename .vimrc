@@ -165,7 +165,8 @@ set noswapfile
 " by adding for example:
 " Plug('GitUser/Repository')
 "
-" 3. After adding plugin, install it using :PlugInstall command
+" 3. After adding plugin, install it by typing command below and press ENTER
+" :PlugInstall 
 
 call plug#begin('~/.vim/plugged')
 
