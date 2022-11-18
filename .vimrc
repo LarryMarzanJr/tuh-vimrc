@@ -190,6 +190,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'tpope/vim-markdown'
 
     " CSS
+    "Plug 'ap/vim-css-color'
 
     " HTML
     
