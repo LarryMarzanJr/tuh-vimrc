@@ -173,6 +173,28 @@ set noswapfile
 
 call plug#begin('~/.vim/plugged')
 
+    "-------------- ADD ONS -----------------------------
+    " NERDTree - integrated file manager
+    " for user manual open https://github.com/preservim/nerdtree#the-nerdtree-
+    Plug 'preservim/nerdtree'
+
+    " vim-airline - Status Bar plugin, below vim text editor
+    Plug 'vim-airline/vim-airline'
+
+    " tpope/vim-fugitive - Git integration Plugin
+    " for user manual open https://github.com/tpope/vim-fugitive#readme
+    Plug 'tpope/vim-fugitive'
+
+    "------------- SYNTAX HIGHLIGHT ---------------------
+    " Markdown
+    Plug 'tpope/vim-markdown'
+
+    " CSS
+
+    " HTML
+    
+    " PHP
+    "------------- AUTO COMPLETION ----------------------
     " YouCompleteMe - Autocompletion plugin for python
     "Plug 'ycm-core/YouCompleteMe'
     " install cmake:
@@ -186,18 +208,6 @@ call plug#begin('~/.vim/plugged')
     " still in virtual environment mode, install package called request
     " by typing:
     " pip3 install requests
-    
-    " vim-airline - Status Bar plugin, below vim text editor
-    Plug 'vim-airline/vim-airline'
-
-    " tpope/vim-fugitive - Git integration Plugin
-    " for user manual open https://github.com/tpope/vim-fugitive#readme
-    Plug 'tpope/vim-fugitive'
-
-    " NERDTree - integrated file manager
-    " for user manual open https://github.com/preservim/nerdtree#the-nerdtree-
-    Plug 'preservim/nerdtree'
-
 
 call plug#end()
 
