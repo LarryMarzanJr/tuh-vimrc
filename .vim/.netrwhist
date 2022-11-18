@@ -1,4 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =2
+let g:netrw_dirhistcnt =4
+let g:netrw_dirhist_4='/home/joenmarz/Projects/Markdowns/LarryMarzanJr.github.io/content/posts/linux'
+let g:netrw_dirhist_3='/home/joenmarz/Projects/Markdowns/LarryMarzanJr.github.io/content/posts/docker'
 let g:netrw_dirhist_2='/home/joenmarz/Projects/Markdowns/LarryMarzanJr.github.io/content/posts'
 let g:netrw_dirhist_1='/home/joenmarz'
