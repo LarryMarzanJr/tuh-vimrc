@@ -178,8 +178,11 @@ call plug#begin('~/.vim/plugged')
     " for user manual open https://github.com/preservim/nerdtree#the-nerdtree-
     Plug 'preservim/nerdtree'
 
-    " vim-airline - Status Bar plugin, below vim text editor
+    " Status Bar plugin, below vim text editor
     Plug 'vim-airline/vim-airline'
+
+    " Show changes in lines by indicating + sign at the left of line number/s
+    Plug 'airblade/vim-gitgutter'
 
     " tpope/vim-fugitive - Git integration Plugin
     " for user manual open https://github.com/tpope/vim-fugitive#readme
@@ -195,6 +198,7 @@ call plug#begin('~/.vim/plugged')
     " HTML
     
     " PHP
+
     "------------- AUTO COMPLETION ----------------------
     " YouCompleteMe - Autocompletion plugin for python
     "Plug 'ycm-core/YouCompleteMe'
