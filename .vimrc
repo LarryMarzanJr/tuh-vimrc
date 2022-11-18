@@ -167,11 +167,14 @@ set noswapfile
 "
 " 3. After adding plugin, install it by typing command below and press ENTER
 " :PlugInstall 
+"
+" 4. To remove plugin, comment one of your unwanted Plug or delete the line, and then
+" execute the command :PlugClean
 
 call plug#begin('~/.vim/plugged')
 
     " YouCompleteMe - Autocompletion plugin for python
-    "Plug('ycm-core/YouCompleteMe')
+    "Plug 'ycm-core/YouCompleteMe'
     " install cmake:
     " sudo apt install cmake
     " activate your virtual environment mode
@@ -184,8 +187,13 @@ call plug#begin('~/.vim/plugged')
     " by typing:
     " pip3 install requests
     
-    "vim-airline - Status Bar plugin, below vim text editor
-    Plug('vim-airline/vim-airline')
+    " vim-airline - Status Bar plugin, below vim text editor
+    Plug 'vim-airline/vim-airline'
+
+    " tpope/vim-fugitive - Git integration Plugin
+    " for user manual open https://github.com/tpope/vim-fugitive#readme
+    Plug 'tpope/vim-fugitive'
+
 
 call plug#end()
 
