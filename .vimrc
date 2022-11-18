@@ -156,38 +156,35 @@ set noswapfile
 " Press gg to go to the first line, then v for visual selection, and then shift+g to go to the end of file.
 "map <C-A> ggv<S-G>
 
-" Manage Vim plugins
-" USING PATHOGEN#INFECT:
-" mkdir -p ~/.vim/autoload ~/.vim/bundle
-" curl -so ~/.vim/autoload/pathogen.vim https://raw.githubusercontent.com/tpope/vim-pathogen/master/autoload/pathogen.vim
-" or
-" now the folder .vim/autoload and .vim/bundle already in this repository so
-" you can install install any plugin into the .vim/bundle/plugin-name/ folder
-call pathogen#infect()
-
-" or alternatively,
-" USING VIM PLUG:
+" MANAGE VIM PLUGINS USING VIM Plug
+" 1. Install vim Plug:
 " curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 "     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-" Specify a directory for plugins,
+" 2. Specify a directory for plugins,
 " add your plugin after plug#begin('~/.vim/plugged') and before plug#end()
 " by adding for example:
 " Plug('GitUser/Repository')
+"
+" 3. After adding plugin, install it using :PlugInstall command
+
 call plug#begin('~/.vim/plugged')
 
     " YouCompleteMe - Autocompletion plugin for python
-    Plug('ycm-core/YouCompleteMe')
+    "Plug('ycm-core/YouCompleteMe')
     " install cmake:
     " sudo apt install cmake
     " activate your virtual environment mode
     " cd inside the YouCompleteMe directory, type:
     " ./install.py --clang-completer
-    let g:ycm_python_binary_path = 'python3'
-    let g:ycm_autoclose_preview_window_after_completion = 1
-    let g:ycm_min_num_of_chars_for_completion = 1
+    " let g:ycm_python_binary_path = 'python3'
+    " let g:ycm_autoclose_preview_window_after_completion = 1
+    " let g:ycm_min_num_of_chars_for_completion = 1
     " still in virtual environment mode, install package called request
     " by typing:
     " pip3 install requests
+    
+    "vim-airline - Status Bar plugin, below vim text editor
+    Plug('vim-airline/vim-airline')
 
 call plug#end()
 
