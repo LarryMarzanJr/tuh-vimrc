@@ -191,6 +191,7 @@ call plug#begin('~/.vim/plugged')
     "------------- SYNTAX HIGHLIGHT ---------------------
     " Markdown
     Plug 'tpope/vim-markdown'
+    Plug 'vim-scripts/fountain.vim'
 
     " CSS
     "Plug 'ap/vim-css-color'
