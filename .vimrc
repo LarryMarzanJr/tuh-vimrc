@@ -38,7 +38,7 @@ set t_Co=256
 "color OceanicNext
 "color OceanicNextLight
 "color PaperColor
-color abstract
+"color abstract
 "color afterglow
 "color alduin
 "color anderson
@@ -73,7 +73,7 @@ color abstract
 "color materialbox
 "color meta5
 "color minimalist
-"color molokai
+color molokai
 "color molokayo
 "color nord
 "color one-dark
