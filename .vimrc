@@ -177,7 +177,12 @@ call plug#begin('~/.vim/plugged')
     " NERDTree - integrated file manager
     " for user manual open https://github.com/preservim/nerdtree#the-nerdtree-
     Plug 'preservim/nerdtree'
-
+    " add keyboard shortcut CTRL+n to open NERDTree
+    nnoremap <C-n> :NERDTree<CR>
+    " Close the tab if NERDTree is the only window remaining in it.
+    autocmd BufEnter * if winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
+    " Automatically close NERDTree after opening a file 
+    let NERDTreeQuitOnOpen=1 
     " Status Bar plugin, below vim text editor
     Plug 'vim-airline/vim-airline'
 
