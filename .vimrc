@@ -186,6 +186,12 @@ call plug#begin('~/.vim/plugged')
     " show hidden files like .files or like .vimrc
     let NERDTreeShowHidden=1
 
+    " lf - integrated file manager
+    " for user manual open https://github.com/ptzz/lf.vim#installation
+    "Plug 'ptzz/lf.vim'
+    " then add dependency:
+    "Plug 'voldikss/vim-floaterm'
+
     " Status Bar plugin, below vim text editor
     Plug 'vim-airline/vim-airline'
 
@@ -222,6 +228,14 @@ call plug#begin('~/.vim/plugged')
     " still in virtual environment mode, install package called request
     " by typing:
     " pip3 install requests
+
+    "------------- DART & FLUTTER ----------------------- 
+    "Plug 'dart-lang/dart-vim-plugin'
+    Plug 'natebosch/vim-lsc'
+    Plug 'natebosch/vim-lsc-dart'
+    let g:lsc_auto_map = v:true
+
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
 
