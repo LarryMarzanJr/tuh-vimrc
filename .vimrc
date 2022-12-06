@@ -230,7 +230,19 @@ call plug#begin('~/.vim/plugged')
     " pip3 install requests
 
     "------------- DART & FLUTTER ----------------------- 
-    "Plug 'dart-lang/dart-vim-plugin'
+    Plug 'dart-lang/dart-vim-plugin'
+    Plug 'thosakwe/vim-flutter'
+    " Provided Commands
+    " :FlutterRun <args> - calls flutter run <args>
+    " :FlutterHotReload - triggers a hot reload on the current Flutter process
+    " :FlutterHotRestart - triggers a hot restart on the current Flutter process
+    " :FlutterQuit - quits the current Flutter process
+    " :FlutterDevices - opens a new buffer, and writes the output of flutter devices to it
+    " :FlutterSplit - opens Flutter output in a horizontal split
+    " :FlutterEmulators - Executes a flutter emulators process.
+    " :FlutterEmulatorsLaunch - Executes a flutter emulators --launch process, with any provided arguments.
+    " :FlutterVisualDebug - Toggles visual debugging in the running Flutter process.
+
     Plug 'natebosch/vim-lsc'
     Plug 'natebosch/vim-lsc-dart'
     let g:lsc_auto_map = v:true
