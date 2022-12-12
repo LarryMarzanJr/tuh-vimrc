@@ -207,8 +207,10 @@ call plug#begin('~/.vim/plugged')
     Plug 'junegunn/fzf.vim'
     " use Ctrl+p as shortcut to open fzf:
     nnoremap <silent> <C-p> :Files<CR>
-    " fzf in 40% mode
+    " fzf in 40% mode down (below)
     let g:fzf_layout = { 'down': '40%' }
+    "for more fzf layout examples visit:
+    "https://github.com/junegunn/fzf/blob/master/README-VIM.md#examples
 
     "------------- SYNTAX HIGHLIGHT ---------------------
     " Markdown
