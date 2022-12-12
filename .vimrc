@@ -13,8 +13,8 @@
 
 " Automatic reloading of .vimrc
 autocmd! bufwritepost .vimrc source %
-" Enable cursor movement
-set term=ansi
+" Enable cursor movement (ignore this for nvim)
+"set term=ansi
 
 " Enable line number
 set number
@@ -202,6 +202,12 @@ call plug#begin('~/.vim/plugged')
     " for user manual open https://github.com/tpope/vim-fugitive#readme
     Plug 'tpope/vim-fugitive'
 
+    " Fuzzy Finder FZF
+    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+    Plug 'junegunn/fzf.vim'
+    " use Ctrl+p as shortcut to open fzf:
+    nnoremap <C-p> :Files<CR>
+
     "------------- SYNTAX HIGHLIGHT ---------------------
     " Markdown
     Plug 'tpope/vim-markdown'
@@ -248,6 +254,8 @@ call plug#begin('~/.vim/plugged')
     let g:lsc_auto_map = v:true
 
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    let g:coc_disable_startup_warning = 1
+
 
 call plug#end()
 
