@@ -206,7 +206,9 @@ call plug#begin('~/.vim/plugged')
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
     " use Ctrl+p as shortcut to open fzf:
-    nnoremap <C-p> :Files<CR>
+    nnoremap <silent> <C-p> :Files<CR>
+    " fzf in 40% mode
+    let g:fzf_layout = { 'down': '40%' }
 
     "------------- SYNTAX HIGHLIGHT ---------------------
     " Markdown
