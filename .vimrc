@@ -217,6 +217,9 @@ call plug#begin('~/.vim/plugged')
     Plug 'tpope/vim-markdown'
     Plug 'vim-scripts/fountain.vim'
 
+    "TOML
+    Plug 'cespare/vim-toml', { 'branch': 'main' }
+
     " CSS
     "Plug 'ap/vim-css-color'
 
@@ -256,9 +259,22 @@ call plug#begin('~/.vim/plugged')
     Plug 'natebosch/vim-lsc'
     Plug 'natebosch/vim-lsc-dart'
     let g:lsc_auto_map = v:true
-
+    
+    " flutter IDE support
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     let g:coc_disable_startup_warning = 1
+    "coc extensions
+    let g:coc_global_extensions = [
+      \ 'coc-flutter',
+      \ 'coc-snippets',
+      \ 'coc-yaml',
+      \]
+    "auto completion
+    inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
+                              \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+
+    " Snippets
+    Plug 'honza/vim-snippets'
 
 
 call plug#end()
