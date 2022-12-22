@@ -1,4 +1,4 @@
-# Custom .vimrc by Larry Benedicto Marzan Jr.
+# Custom Vim/Neovim config file by Larry Benedicto Marzan Jr.
    
 ## HOW TO INSTALL
 
