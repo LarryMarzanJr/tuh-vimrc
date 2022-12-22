@@ -9,8 +9,8 @@ git clone https://github.com/LarryMarzanJr/tuh-vimrc.git ~/.tuh-vimrc
 > For VIM:
 Create symlink (shortcut) to your `.vimrc` file and .vim folder 
 ```bash
-ln -s ~/vimrc/.vimrc ~/.vimrc
-ln -s ~/vimrc/.vim ~/.vim
+ln -s ~/.tuh-vimrc/.vimrc ~/.vimrc
+ln -s ~/.tuh-vimrc/.vim ~/.vim
 ```
 
 > For NVIM:
