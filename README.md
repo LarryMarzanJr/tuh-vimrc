@@ -4,7 +4,7 @@
 
 Clone this git repo from home directory:
 ```bash
-git clone https://github.com/LarryMarzanJr/vimrc.git ~/.tuh-vimrc
+git clone https://github.com/LarryMarzanJr/tuh-vimrc.git ~/.tuh-vimrc
 ```
 > For VIM:
 Create symlink (shortcut) to your `.vimrc` file and .vim folder 
