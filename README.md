@@ -16,7 +16,7 @@ ln -s ~/vimrc/.vim ~/.vim
 > For NVIM:
 Create symlink (shortcut) to your `init.vim` file and .vim folder 
 ```bash
-ln -s ~/vimrc/.vimrc ~/.config/nvim/init.vim
-ln -s ~/vimrc/.vim ~/.vim
+ln -s ~/.tuh-vimrc/.vimrc ~/.config/nvim/init.vim
+ln -s ~/.tuh-vimrc/.vim ~/.vim
 ```
 
