@@ -14,10 +14,12 @@ ln -s ~/.tuh-vimrc/.vim ~/.vim
 ```
 
 > For NVIM:
-Create symlink (shortcut) to your `init.vim` file and .vim folder 
+Create `nvim` folder, symlink (shortcut) for `init.vim` file, `.vim` folder and `colors` folder.
 ```bash
+mkdir ~/.config/nvim
 ln -s ~/.tuh-vimrc/.vimrc ~/.config/nvim/init.vim
 ln -s ~/.tuh-vimrc/.vim ~/.vim
+ln -s ~/.tuh-vimrc/.vim/colors ~/.config/nvim/colors
 ```
 Install Plugin manager to enable Plug features:
 ```bash
