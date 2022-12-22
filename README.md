@@ -4,11 +4,19 @@
 
 Clone this git repo from home directory:
 ```bash
-git clone https://github.com/LarryMarzanJr/vimrc.git
+git clone https://github.com/LarryMarzanJr/vimrc.git ~/.tuh-vimrc
 ```
-
-Create symlink (shortcut) to your .vimrc file and .vim folder 
+> For VIM:
+Create symlink (shortcut) to your `.vimrc` file and .vim folder 
 ```bash
 ln -s ~/vimrc/.vimrc ~/.vimrc
 ln -s ~/vimrc/.vim ~/.vim
 ```
+
+> For NVIM:
+Create symlink (shortcut) to your `init.vim` file and .vim folder 
+```bash
+ln -s ~/vimrc/.vimrc ~/.config/nvim/init.vim
+ln -s ~/vimrc/.vim ~/.vim
+```
+
