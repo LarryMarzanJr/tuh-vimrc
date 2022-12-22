@@ -171,7 +171,7 @@ set noswapfile
 " 4. To remove plugin, comment one of your unwanted Plug or delete the line, and then
 " execute the command :PlugClean
 
-call plug#begin('~/.vim/plugged')
+call plug#begin("~/.vim/plugged")
 
     "-------------- ADD ONS -----------------------------
     " NERDTree - integrated file manager
