@@ -19,4 +19,7 @@ Create symlink (shortcut) to your `init.vim` file and .vim folder
 ln -s ~/.tuh-vimrc/.vimrc ~/.config/nvim/init.vim
 ln -s ~/.tuh-vimrc/.vim ~/.vim
 ```
-
+Install Plugin manager to enable Plug features:
+```bash
+curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+```
