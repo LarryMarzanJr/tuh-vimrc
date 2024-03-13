@@ -226,7 +226,7 @@ call plug#begin("~/.vim/plugged")
     " HTML
     
     " PHP
-    "Laravel Blade Templates extension for coc.nvim. Provides "formatter", "linter", "completion" and more... 
+    "Laravel Blade Templates extension for coc.nvim. Provides formatter, linter, completion and more... 
     Plug 'yaegassy/coc-blade', {'do': 'yarn install --frozen-lockfile'}
 
     "------------- AUTO COMPLETION ----------------------
@@ -262,14 +262,18 @@ call plug#begin("~/.vim/plugged")
     Plug 'natebosch/vim-lsc-dart'
     let g:lsc_auto_map = v:true
     
-    " flutter IDE support
+    
+    "------------- coc.nvim Support ----------------------- 
+    "coc.nvim plugin
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     let g:coc_disable_startup_warning = 1
+    
     "coc extensions
     let g:coc_global_extensions = [
       \ 'coc-flutter',
       \ 'coc-snippets',
       \ 'coc-yaml',
+      \ 'coc-blade',
       \]
     "auto completion
     inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
