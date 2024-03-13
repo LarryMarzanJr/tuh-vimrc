@@ -226,6 +226,8 @@ call plug#begin("~/.vim/plugged")
     " HTML
     
     " PHP
+    "Laravel Blade Templates extension for coc.nvim. Provides "formatter", "linter", "completion" and more... 
+    Plug 'yaegassy/coc-blade', {'do': 'yarn install --frozen-lockfile'}
 
     "------------- AUTO COMPLETION ----------------------
     " YouCompleteMe - Autocompletion plugin for python
