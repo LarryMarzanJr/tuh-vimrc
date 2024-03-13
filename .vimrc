@@ -261,17 +261,17 @@ call plug#begin("~/.vim/plugged")
     let g:lsc_auto_map = v:true
     
     " flutter IDE support
-    "Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}
     let g:coc_disable_startup_warning = 1
     "coc extensions
-    "let g:coc_global_extensions = [
-    "  \ 'coc-flutter',
-    "  \ 'coc-snippets',
-    "  \ 'coc-yaml',
-    "  \]
+    let g:coc_global_extensions = [
+      \ 'coc-flutter',
+      \ 'coc-snippets',
+      \ 'coc-yaml',
+      \]
     "auto completion
-    "inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
-    "                          \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+    inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
+                              \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
     " Snippets
     Plug 'honza/vim-snippets'
